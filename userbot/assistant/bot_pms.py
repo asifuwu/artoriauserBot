@@ -76,16 +76,16 @@ async def bot_start(event):
         return
     reply_to = await reply_id(event)
     if chat.id != Config.OWNER_ID:
-        start_msg = f"Hey! 👤{_format.mentionuser(chat.first_name , chat.id)},\
-                    \nI am {_format.mentionuser(user.first_name , user.id)}'s assistant bot.\
-                    \nYou can contact to my master from here.\
-                    \n\nPowered by [Catuserbot](https://t.me/catuserbot17)"
+        start_msg = f"osu! 👤{_format.mentionuser(chat.first_name , chat.id)},\
+                    \nI am {_format.mentionuser(user.first_name , user.id)}'s servent.\
+                    \nYou can contact to my master from here."
+                    
         buttons = [
             (
-                Button.url("Repo", "https://github.com/sandy1709/catuserbot"),
+                Button.url("My Realm", "https://t.me/asifuuusrealm"),
                 Button.url(
-                    "Deploy",
-                    "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack&template=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack",
+                    "My GitHub",
+                    "https://github.com/asifuwu",
                 ),
             )
         ]
